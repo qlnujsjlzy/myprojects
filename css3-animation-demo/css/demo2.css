@@ -1,0 +1,218 @@
+.images div span{
+	position: absolute;
+	top:0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+
+.images div:nth-of-type(2n+1) span
+{
+	left: -150px;
+	-webkit-transition: left .5s ease-in-out;
+	   -moz-transition: left .5s ease-in-out;
+	    -ms-transition: left .5s ease-in-out;
+	     -o-transition: left .5s ease-in-out;
+	        transition: left .5s ease-in-out;
+}
+
+.images div:nth-of-type(2n) span
+{
+	left: 150px;
+	-webkit-transition: left .5s ease-in-out;
+	   -moz-transition: left .5s ease-in-out;
+	    -ms-transition: left .5s ease-in-out;
+	     -o-transition: left .5s ease-in-out;
+	        transition: left .5s ease-in-out;
+}
+
+.main input:checked ~ .images div:nth-of-type(2n+1) span{
+	-webkit-animation: rightout .6s ease-in-out;
+	   -moz-animation: rightout .6s ease-in-out;
+	    -ms-animation: rightout .6s ease-in-out;
+	     -o-animation: rightout .6s ease-in-out;
+	        animation: rightout .6s ease-in-out;
+}
+
+@-webkit-keyframes rightout{
+	from{
+		left: 0;
+	}
+	to{
+		left: 150px;
+	}
+}
+@-moz-keyframes rightout{
+	from{
+		left: 0;
+	}
+	to{
+		left: 150px;
+	}
+}
+@-ms-keyframes rightout{
+	from{
+		left: 0;
+	}
+	to{
+		left: 150px;
+	}
+}
+@-o-keyframes rightout{
+	from{
+		left: 0;
+	}
+	to{
+		left: 150px;
+	}
+}
+@keyframes rightout{
+	from{
+		left: 0;
+	}
+	to{
+		left: 150px;
+	}
+}
+
+.main input:checked ~ .images div:nth-of-type(2n) span{
+	-webkit-animation: leftout .6s ease-in-out;
+	   -moz-animation: leftout .6s ease-in-out;
+	    -ms-animation: leftout .6s ease-in-out;
+	     -o-animation: leftout .6s ease-in-out;
+	        animation: leftout .6s ease-in-out;
+}
+
+@-webkit-keyframes leftout{
+	from{
+		left: 0;
+	}
+	to{
+		left: -150px;
+	}
+}
+@-moz-keyframes leftout{
+	from{
+		left: 0;
+	}
+	to{
+		left: -150px;
+	}
+}
+@-ms-keyframes leftout{
+	from{
+		left: 0;
+	}
+	to{
+		left: -150px;
+	}
+}
+@-o-keyframes leftout{
+	from{
+		left: 0;
+	}
+	to{
+		left: -150px;
+	}
+}
+@keyframes leftout{
+	from{
+		left: 0;
+	}
+	to{
+		left: -150px;
+	}
+}
+
+
+.main input:nth-of-type(1):checked ~ .images div span:nth-of-type(1),
+.main input:nth-of-type(2):checked ~ .images div span:nth-of-type(2),
+.main input:nth-of-type(3):checked ~ .images div span:nth-of-type(3),
+.main input:nth-of-type(4):checked ~ .images div span:nth-of-type(4)
+{
+	z-index: 10;
+	left: 0;
+	animation: none;
+}
+
+/*文字标题动画*/
+
+.title h1{
+	color:#fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+	font-weight: normal;
+}
+
+.title h1 span{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+}
+
+.title h1 span:first-of-type{
+	font-family: "BebasNeue","Arial Narrow", Arial, sans-serif;
+	font-size: 70px;
+	letter-spacing: 7px;
+	-webkit-transition: opacity .8s ease-in-out, -webkit-transform .8s ease-in-out;
+	   -moz-transition: opacity .8s ease-in-out, -moz-transform .8s ease-in-out;
+	    -ms-transition: opacity .8s ease-in-out, -ms-transform .8s ease-in-out;
+	     -o-transition: opacity .8s ease-in-out, -o-transform .8s ease-in-out;
+	        transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+}
+
+.title h1 span:last-of-type{
+	font-family: Cambria, Palatino,"Palatino Linotype","Palatino LT STD";
+	margin-top: 84px;
+	font-size: 14px;
+	font-style: italic;
+	padding: 10px 0;
+	background: rgba(130,195,217,0.9);
+	-webkit-transition: opacity .8s ease-in-out;
+	   -moz-transition: opacity .8s ease-in-out;
+	    -ms-transition: opacity .8s ease-in-out;
+	     -o-transition: opacity .8s ease-in-out;
+	        transition: opacity .8s ease-in-out;
+}
+
+.main input:checked ~ .title h1 span:first-of-type{
+	opacity: 0;
+	-webkit-transform: scale(.5);
+	   -moz-transform: scale(.5);
+	    -ms-transform: scale(.5);
+	     -o-transform: scale(.5);
+	        transform: scale(.5);
+}
+
+.main input:checked ~ .title h1 span:last-of-type{
+	opacity: 0;
+}
+
+.main input:nth-of-type(1):checked ~ .title h1:nth-of-type(1) span:first-of-type,
+.main input:nth-of-type(2):checked ~ .title h1:nth-of-type(2) span:first-of-type,
+.main input:nth-of-type(3):checked ~ .title h1:nth-of-type(3) span:first-of-type,
+.main input:nth-of-type(4):checked ~ .title h1:nth-of-type(4) span:first-of-type
+{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+
+.main input:nth-of-type(1):checked ~ .title h1:nth-of-type(1) span:last-of-type,
+.main input:nth-of-type(2):checked ~ .title h1:nth-of-type(2) span:last-of-type,
+.main input:nth-of-type(3):checked ~ .title h1:nth-of-type(3) span:last-of-type,
+.main input:nth-of-type(4):checked ~ .title h1:nth-of-type(4) span:last-of-type
+{
+	opacity: 1;
+		-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+
