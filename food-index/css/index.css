@@ -1,0 +1,212 @@
+/*banner部分*/
+.index-banner{
+	width:1500px;
+	margin:0 auto;
+	position: relative;
+	border-bottom:4px solid #f34949;
+}
+
+.index-banner .banner-text{
+	position: absolute;
+	top:210px;
+	left:50%;
+	margin-left:-388px;
+}
+
+.index-banner .banner-text .banner-logo{
+	width:776px;
+	height:117px;
+	background: url("../images/banner-logo.png") no-repeat;
+}
+
+.index-banner .banner-text .banner-info{
+	margin-top:17px;
+	text-align:center;
+}
+
+.index-banner .banner-text .banner-info .text{
+	font-size:16px;
+	color:#fff;
+	margin:0 35px;
+}
+
+.index-banner .banner-text .banner-info .line{
+	display: inline-block;
+	width:40px;
+	border-bottom:1px solid #fff;
+	vertical-align:center;
+}
+
+/*menu菜单部分*/
+.index-menu{
+	position: relative;
+}
+
+.index-menu .menu-logo{
+	width:152px;
+	height:70px;
+	background-color:#f34949;
+	margin:0 auto;
+	font-size:20px;
+	color:#fff;
+	line-height: 60px;
+	text-align:center;	
+}
+
+.index-menu .menu-logo:after{
+	content:'';
+	width:0;
+	height:0;
+	position:absolute;
+	top:60px;
+	left:50%;
+	margin-left:-76px;
+	border-left:76px solid transparent;
+	border-right:76px solid transparent;
+	border-bottom:10px solid #fff;
+}
+
+.index-menu .menu-list{
+	margin-top:80px;
+	width:1200px;
+}
+.index-menu .menu-list .item{
+	width:500px;
+	height:94px;
+	float:left;
+	margin-right:100px;
+}
+
+.index-menu .menu-list .text{
+	float:left;
+}
+
+.index-menu .menu-list .text h3{
+	font-size:16px;
+	color:#555;
+}
+
+.index-menu .menu-list .text p{
+	font-size:12px;
+	color:#b7b7b7;
+}
+
+.index-menu .menu-list .line{
+	float:right;
+	width:180px;
+	border-top:1px solid #e3e1e1;
+	margin-top:10px;
+	margin-right:15px;
+
+}
+
+.index-menu .menu-list .price{
+	float:right;
+	font-size:16px;
+	color:#555;
+}
+
+.index-menu .menu-loadmore{
+	margin-top:30px;
+	width:120px;
+	height:30px;
+	border:1px solid #d7d5d5;
+	color:#d7d5d5;
+	margin:0 auto;
+	line-height:30px;
+	padding-left:14px;
+}
+
+.index-menu .menu-loadmore .vertical{
+	margin:0 10px;
+}
+
+.index-menu .menu-loadmore .icon{
+	display: inline-block;
+	width:11px;
+	height:7px;
+	background:url(../images/index-menu-01.png);
+}
+
+/*热门推荐部分*/
+.index-showcase{
+	margin-top:200px;
+}
+
+.index-showcase .title h3{
+	float:left;
+	font-size:20px;
+	color:#3b3b3b;
+}
+
+.index-showcase .title .line{
+	float:left;
+	width:200px;
+	margin-left:50px;
+	margin-top:8px;
+	border-top:1px solid #e5e3e3;
+}
+
+.index-showcase .title .btn-group{
+	float:right;
+}
+
+.index-showcase .title .btn-group .btn{
+	display: inline-block;
+	width:10px;
+	height:10px;
+	margin-left:10px;
+	background:#dedede;
+	border-radius: 5px;
+}
+
+.index-showcase .title .btn-group .active{
+	background:#9b9b9b;
+}
+
+.index-showcase .hot-recommend{
+	margin-top:80px;
+	width:1170px;
+}
+
+.index-showcase .hot-recommend li{
+	float:left;
+	margin-right:60px;
+}
+
+.index-showcase .hot-recommend .food-name{
+	margin-top:30px;
+	font-size:16px;
+	color:#555;
+}
+
+.index-showcase .hot-recommend .food-name .price{
+	margin-left:86px;
+}
+
+.index-showcase .hot-recommend .stars{
+	margin-top:12px;
+}
+
+.index-showcase .hot-recommend .star{
+	display: inline-block;
+	width:11px;
+	height:13px;
+	background:url("../images/index-showcase-star.png") no-repeat;
+	margin-right:5px;
+}
+
+.index-showcase .hot-recommend .no-star{
+	background-position:0 -14px;
+}
+
+/*Gallery部分*/
+.index-showcase .gallery-pics{
+	margin-top:130px;
+	height:380px;
+	overflow:hidden;
+}
+
+.index-showcase .gallery-pics .pic-col{
+	float:left;
+}

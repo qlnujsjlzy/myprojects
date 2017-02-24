@@ -1,0 +1,415 @@
+/*for all tag*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	margin:0 auto;
+	overflow: hidden;
+	}
+/*天空和草地渐变*/
+.sky{
+	width: 100%;
+	height: 50%;
+	background: -webkit-linear-gradient(bottom,rgb(255,255,255),rgba(196, 228, 253,1));
+	background:    -moz-linear-gradient(top,rgba(196, 228, 253,1),rgb(255,255,255));
+	background:     -ms-linear-gradient(top,rgba(196, 228, 253,1),rgb(255,255,255));
+	background:      -o-linear-gradient(top,rgb(255,255,255),rgba(196, 228, 253,1));
+	background:         linear-gradient(to bottom,rgba(196, 228, 253,1)，rgb(255,255,255));
+	position: relative;
+}
+
+.land{
+	width: 100%;
+	height: 50%;
+	background: -webkit-linear-gradient(rgb(255,255,255) 8%,rgba(246,249,240,1) 15%,rgba(148, 190, 89,1) 100%);
+	background:    -moz-linear-gradient(rgb(255,255,255) 8%,rgba(246,249,240,1) 15%,rgba(148, 190, 89,1) 100%);
+	background:      -o-linear-gradient(rgb(255,255,255) 8%,rgba(246,249,240,1) 15%,rgba(148, 190, 89,1) 100%);
+	background:         linear-gradient(rgb(255,255,255) 8%,rgba(246,249,240,1) 15%,rgba(148, 190, 89,1) 100%);
+	position: relative;
+}
+
+/*云朵定义*/
+.cloud{
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 2px 2px 3px white;
+	position: absolute;
+	right: -140px;
+	font-size: 24px;
+}
+
+.cloud:before{
+	content: '';
+	display: block;
+	width: 143px;
+	height: 40px;
+	background: #fff;
+	box-shadow: 2px 2px 3px white;
+	position: absolute;
+	bottom: 5px;
+	left: -46px;
+	border-radius: 2em;
+}
+
+.cloud:after{
+	content: '';
+	display: block;
+	width: 70px;
+	height: 49px;
+	background: #fff;
+	box-shadow: 2px 2px 3px white;
+	position: absolute;
+	top:30px;
+	left: -36px;
+	border-radius: 2em;
+	transform: rotate(45deg);
+}
+
+/*动画定义：注意要实现要求的循环效果，动画的周期必须是一致的，可利用delay 以及百分比来设置前面和后面的延时*/
+/*云朵1*/
+.c1{
+	top:26px;
+	-webkit-animation: fly1 11s linear infinite;
+	   -moz-animation: fly1 11s linear infinite;
+	    -ms-animation: fly1 11s linear infinite;
+	     -o-animation: fly1 11s linear infinite;
+	        animation: fly1 11s linear infinite;
+
+}
+
+@-webkit-keyframes fly1{
+	from{
+		right: -140px;
+	}
+	54.5%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-moz-keyframes fly1{
+	from{
+		right: -140px;
+	}
+	54.5%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-ms-keyframes fly1{
+	from{
+		right: -140px;
+	}
+	54.5%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-o-keyframes fly1{
+	from{
+		right: -140px;
+	}
+	54.5%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@keyframes fly1{
+	from{
+		right: -140px;
+	}
+	54.5%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+
+/*云朵2*/
+.c2{
+	transform: scale(.7,.7) translateY(144px);
+	-webkit-animation: fly2 11s linear infinite;
+	   -moz-animation: fly2 11s linear infinite;
+	    -ms-animation: fly2 11s linear infinite;
+	     -o-animation: fly2 11s linear infinite;
+	        animation: fly2 11s linear infinite;
+	opacity: .9;
+}
+
+@-webkit-keyframes fly2{
+	from{
+		right: -70px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-moz-keyframes fly2{
+	from{
+		right: -70px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-ms-keyframes fly2{
+	from{
+		right: -70px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-o-keyframes fly2{
+	from{
+		right: -70px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@keyframes fly2{
+	from{
+		right: -70px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+
+/*云朵3*/
+.c3{
+	transform: scale(.7,.7) translateY(-3px);
+	-webkit-animation: fly3 11s linear infinite;
+	   -moz-animation: fly3 11s linear infinite;
+	    -ms-animation: fly3 11s linear infinite;
+	     -o-animation: fly3 11s linear infinite;
+	        animation: fly3 11s linear infinite;
+	opacity: .9;
+}
+
+@-webkit-keyframes fly3{
+	from{
+		right: 0;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-moz-keyframes fly3{
+	from{
+		right: 0;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-ms-keyframes fly3{
+	from{
+		right: 0;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-o-keyframes fly3{
+	from{
+		right: 0;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@keyframes fly3{
+	from{
+		right: 0;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+
+/*云朵4*/
+.c4{
+	transform: scale(.5,.5) translateY(135px);
+	-webkit-animation: fly4 11s 1s linear infinite;
+	   -moz-animation: fly4 11s 1s linear infinite;
+	    -ms-animation: fly4 11s 1s linear infinite;
+	     -o-animation: fly4 11s 1s linear infinite;
+	        animation: fly4 11s 1s linear infinite;
+	opacity: .7;
+}
+
+@-webkit-keyframes fly4{
+	from{
+		right: -140px;
+	}
+	90.9%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-moz-keyframes fly4{
+	from{
+		right: -140px;
+	}
+	90.9%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-ms-keyframes fly4{
+	from{
+		right: -140px;
+	}
+	90.9%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-o-keyframes fly4{
+	from{
+		right: -140px;
+	}
+	90.9%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@keyframes fly4{
+	from{
+		right: -140px;
+	}
+	90.9%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+
+/*云朵5*/
+.c5{
+	transform: scale(.7,.7) translateY(8px);
+	-webkit-animation: fly5 11s 2s linear infinite;
+	   -moz-animation: fly5 11s 2s linear infinite;
+	    -ms-animation: fly5 11s 2s linear infinite;
+	     -o-animation: fly5 11s 2s linear infinite;
+	        animation: fly5 11s 2s linear infinite;
+	opacity: .8;
+}
+
+@-webkit-keyframes fly5{
+	from{
+		right: -140px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-moz-keyframes fly5{
+	from{
+		right: -140px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-ms-keyframes fly5{
+	from{
+		right: -140px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@-o-keyframes fly5{
+	from{
+		right: -140px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+@keyframes fly5{
+	from{
+		right: -140px;
+	}
+	72.7%{
+		right:101%;
+	}
+	to{
+		right:101%;
+	}
+}
+
+/*小兔子*/
+.land img{
+	position: absolute;
+	bottom: 50px;
+	right: 200px;
+}
